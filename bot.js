@@ -37,7 +37,7 @@ client.on('message', message => {
     if (message.content == 'نقاطي'){
         var embed = new Discord.RichEmbed()
         .setAuthor(message.author.username,message.author.avatarURL)
-        .addField(`نقاطك : ${points[message.author.id].points}`,'By : زعلان',   true)
+        .addField(`نقاطك : ${points[message.author.id].points}`,'By : Tariq',   true)
         .setColor('RANDOM')
         .setFooter('SFARI server', client.user.avatarURL);
         message.channel.sendEmbed(embed)
