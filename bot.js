@@ -5,7 +5,7 @@ const prefix = '!'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`SAFARI Games`,"http://twitch.tv/S-F")
+client.user.setGame(`SAFARI GAMES`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -39,7 +39,7 @@ client.on('message', message => {
         .setAuthor(message.author.username,message.author.avatarURL)
         .addField(`نقاطك : ${points[message.author.id].points}`,'By : Tariq',   true)
         .setColor('RANDOM')
-        .setFooter('SFARI server', client.user.avatarURL);
+        .setFooter('SAFARI GAMES', client.user.avatarURL);
         message.channel.sendEmbed(embed)
     };
     if (message.content == "فكك") {    
